@@ -1,0 +1,136 @@
+{
+    "Caption": "$(L,Users_Detail)",
+    "DesignTimeTarget": {
+        "Service": "/KameraAnbindungUI/Services/KameraAnbindungService.service",
+        "EntitySet": "Users",
+        "QueryOptions": ""
+    },
+    "ActionBar": {
+        "Items": []
+    },
+    "Controls": [{
+        "Sections": [{
+            "ObjectHeader": {
+                "DetailImage": "",
+                "HeadlineText": "{lastName}",
+                "Subhead": "{firstName}",
+                "Tags": [],
+                "BodyText": "",
+                "Footnote": "{role}",
+                "Description": "{eMail}",
+                "StatusText": "",
+                "StatusImage": "",
+                "SubstatusImage": "",
+                "SubstatusText": ""
+            },
+            "_Type": "Section.Type.ObjectHeader"
+        }, {
+            "KeyAndValues": [{
+                    "KeyName": "lastName",
+                    "Value": "{lastName}"
+                },
+                {
+                    "KeyName": "firstName",
+                    "Value": "{firstName}"
+                },
+                {
+                    "KeyName": "eMail",
+                    "Value": "{eMail}"
+                },
+                {
+                    "KeyName": "role",
+                    "Value": "{role}"
+                }
+            ],
+            "Layout": {
+                "NumberOfColumns": 2
+            },
+            "MaxItemCount": 1,
+            "_Name": "SectionKeyValue0",
+            "_Type": "Section.Type.KeyValue"
+        }, {
+            "Header": {
+                "Caption": "vehicles"
+            },
+            "ObjectCell": {
+                "AccessoryType": "disclosureIndicator",
+                "Description": "",
+                "DetailImage": "",
+                "DetailImageIsCircular": false,
+                "Icons": [],
+                "StatusImage": "",
+                "Title": "{ID}",
+                "Footnote": "",
+                "PreserveIconStackSpacing": false,
+                "StatusText": "",
+                "Subhead": "{licencePlate}",
+                "SubstatusText": ""
+            },
+            "EmptySection": {
+                "Caption": "No record found!"
+            },
+            "Target": {
+                "EntitySet": "{@odata.readLink}/vehicles",
+                "Service": "/KameraAnbindungUI/Services/KameraAnbindungService.service"
+            },
+            "_Type": "Section.Type.ObjectTable"
+        }, {
+            "Header": {
+                "Caption": "reservations"
+            },
+            "ObjectCell": {
+                "AccessoryType": "disclosureIndicator",
+                "Description": "",
+                "DetailImage": "",
+                "DetailImageIsCircular": false,
+                "Icons": [],
+                "StatusImage": "",
+                "Title": "{ID}",
+                "Footnote": "",
+                "PreserveIconStackSpacing": false,
+                "StatusText": "",
+                "Subhead": "",
+                "SubstatusText": ""
+            },
+            "EmptySection": {
+                "Caption": "No record found!"
+            },
+            "Target": {
+                "EntitySet": "{@odata.readLink}/reservations",
+                "Service": "/KameraAnbindungUI/Services/KameraAnbindungService.service"
+            },
+            "_Type": "Section.Type.ObjectTable"
+        }, {
+            "Header": {
+                "Caption": "accesLogs"
+            },
+            "ObjectCell": {
+                "AccessoryType": "disclosureIndicator",
+                "Description": "{action}",
+                "DetailImage": "",
+                "DetailImageIsCircular": false,
+                "Icons": [],
+                "StatusImage": "",
+                "Title": "{entityName}",
+                "Footnote": "",
+                "PreserveIconStackSpacing": false,
+                "StatusText": "",
+                "Subhead": "{role}",
+                "SubstatusText": ""
+            },
+            "EmptySection": {
+                "Caption": "No record found!"
+            },
+            "Target": {
+                "EntitySet": "{@odata.readLink}/accesLogs",
+                "Service": "/KameraAnbindungUI/Services/KameraAnbindungService.service"
+            },
+            "_Type": "Section.Type.ObjectTable"
+        }],
+        "DataSubscriptions": ["Vehicles", "Reservations", "AccesLogs"],
+        "_Type": "Control.Type.SectionedTable",
+        "_Name": "SectionedTable"
+    }],
+    "_Type": "Page",
+    "_Name": "Users_Detail"
+}

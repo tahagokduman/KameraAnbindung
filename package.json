@@ -1,0 +1,55 @@
+{
+    "name": "KameraAnbindung",
+    "version": "1.0.0",
+    "description": "A simple CAP project.",
+    "dependencies": {
+        "@cap-js/hana": "^2",
+        "@sap-cloud-sdk/http-client": "^4.5.1",
+        "@sap-cloud-sdk/util": "^4.5.1",
+        "@sap/cds": "^9",
+        "@sap/low-code-event-handler": "^1.2.2",
+        "@sap/mdk-tools": "^1.4.0",
+        "@sap/xsenv": ">=3.3.2 <3.3.3",
+        "@sap/xssec": "^4.13.0",
+        "express": "^4",
+        "framer-motion": "^12.38.0",
+        "hdb": "^2.27.1",
+        "kafkajs": "^2.2.4",
+        "lucide-react": "^0.577.0",
+        "mqtt": "^5.15.0",
+        "passport": "^0.7.0"
+    },
+    "devDependencies": {
+        "@cap-js/sqlite": "^2",
+        "@sap/dev-cap-tools": "^1.31.0"
+    },
+    "scripts": {
+        "start": "cds-serve",
+        "start-local": "npm run generate-entry-point && npm run cds-watch",
+        "generate-entry-point": "dev-cap-tools gen-entrypoint",
+        "cds-watch": "cds watch --open",
+        "mqtt-listener": "node integration/mqtt-listener.js",
+        "mqtt-publisher": "node integration/mqtt-publisher.js",
+        "event-generator": "node integration/event-generator.js"
+    },
+    "private": true,
+    "cds": {
+        "requires": {
+            "db": {
+                "kind": "sqlite",
+                "credentials": {
+                    "url": "db.sqlite"
+                }
+            },
+            "auth": {
+                "[development]": {
+                    "kind": "dummy"
+                },
+                "[production]": {
+                    "kind": "xsuaa"
+                }
+            }
+        }
+    },
+    "lcap": true
+}

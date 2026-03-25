@@ -1,0 +1,131 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable",
+			"Sections": [
+				{
+					"Header": {
+						"_Name": "SectionHeader_KameraAnbindungService",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "KameraAnbindungService",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Buttons": [
+						{
+							"OnPress": "/KameraAnbindungUI/Actions/KameraAnbindungService/AccesLogs/NavToAccesLogs_List.action",
+							"Alignment": "Center",
+							"Title": "AccesLogs",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"_Type": "ButtonTable.Type.Button"
+						},
+						{
+							"OnPress": "/KameraAnbindungUI/Actions/KameraAnbindungService/CameraEvents/NavToCameraEvents_List.action",
+							"Alignment": "Center",
+							"Title": "CameraEvents",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"_Type": "ButtonTable.Type.Button"
+						},
+						{
+							"OnPress": "/KameraAnbindungUI/Actions/KameraAnbindungService/Cameras/NavToCameras_List.action",
+							"Alignment": "Center",
+							"Title": "Cameras",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"_Type": "ButtonTable.Type.Button"
+						},
+						{
+							"OnPress": "/KameraAnbindungUI/Actions/KameraAnbindungService/Company/NavToCompany_List.action",
+							"Alignment": "Center",
+							"Title": "Company",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"_Type": "ButtonTable.Type.Button"
+						},
+						{
+							"OnPress": "/KameraAnbindungUI/Actions/KameraAnbindungService/Reservations/NavToReservations_List.action",
+							"Alignment": "Center",
+							"Title": "Reservations",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"_Type": "ButtonTable.Type.Button"
+						},
+						{
+							"OnPress": "/KameraAnbindungUI/Actions/KameraAnbindungService/Session/NavToSession_List.action",
+							"Alignment": "Center",
+							"Title": "Session",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"_Type": "ButtonTable.Type.Button"
+						},
+						{
+							"OnPress": "/KameraAnbindungUI/Actions/KameraAnbindungService/Tariffs/NavToTariffs_List.action",
+							"Alignment": "Center",
+							"Title": "Tariffs",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"_Type": "ButtonTable.Type.Button"
+						},
+						{
+							"OnPress": "/KameraAnbindungUI/Actions/KameraAnbindungService/Users/NavToUsers_List.action",
+							"Alignment": "Center",
+							"Title": "Users",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"_Type": "ButtonTable.Type.Button"
+						},
+						{
+							"OnPress": "/KameraAnbindungUI/Actions/KameraAnbindungService/Vehicles/NavToVehicles_List.action",
+							"Alignment": "Center",
+							"Title": "Vehicles",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"_Type": "ButtonTable.Type.Button"
+						},
+						{
+							"OnPress": "/KameraAnbindungUI/Actions/KameraAnbindungService/Users/NavToUsers_List.action",
+							"TextAlignment": "center",
+							"Title": "Users"
+						}
+					],
+					"_Name": "SectionButtonTable_KameraAnbindungService",
+					"_Type": "Section.Type.ButtonTable"
+				}
+			]
+		}
+	],
+	"_Name": "Main",
+	"_Type": "Page",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "User Menu",
+				"Icon": "sap-icon://customer",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/KameraAnbindungUI/Actions/Application/UserMenuPopover.action",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"_Name": "ActionBar1",
+		"Caption": "Main",
+		"PreferredCaptionSize": "Large",
+		"_Type": "Control.Type.ActionBar"
+	}
+}

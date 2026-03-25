@@ -1,0 +1,64 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/KameraAnbindungUI/Services/KameraAnbindungService.service",
+		"EntitySet": "Tariffs",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [],
+		"Caption": "$(L,Tariffs_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{name}",
+						"Subhead": "{price}",
+						"BodyText": "",
+						"Footnote": "",
+						"Description": "{unit}",
+						"StatusText": "",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": ""
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "name",
+							"Value": "{name}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "price",
+							"Value": "{price}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "unit",
+							"Value": "{unit}",
+							"_Type": "KeyValue.Type.Item"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Tariffs_Detail"
+}

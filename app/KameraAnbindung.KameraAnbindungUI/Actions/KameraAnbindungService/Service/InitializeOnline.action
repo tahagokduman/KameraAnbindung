@@ -1,0 +1,9 @@
+{
+    "Service": "/KameraAnbindungUI/Services/KameraAnbindungService.service",
+    "_Type": "Action.Type.ODataService.Initialize",
+    "ShowActivityIndicator": true,
+    "OnFailure": "/KameraAnbindungUI/Actions/KameraAnbindungService/Service/InitializeOnlineFailureMessage.action",
+    "ActionResult": {
+        "_Name": "init"
+    }
+}

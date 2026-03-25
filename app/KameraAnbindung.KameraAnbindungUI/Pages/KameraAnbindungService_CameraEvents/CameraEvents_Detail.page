@@ -1,0 +1,79 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/KameraAnbindungUI/Services/KameraAnbindungService.service",
+		"EntitySet": "CameraEvents",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [],
+		"Caption": "$(L,CameraEvents_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{sourceDeviceId}",
+						"Subhead": "{eventType}",
+						"BodyText": "",
+						"Footnote": "{plateNormalized}",
+						"Description": "{timestamp}",
+						"StatusText": "{confidence}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{payloadVersion}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "eventType",
+							"Value": "{eventType}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "sourceDeviceId",
+							"Value": "{sourceDeviceId}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "timestamp",
+							"Value": "{timestamp}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "plateNormalized",
+							"Value": "{plateNormalized}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "confidence",
+							"Value": "{confidence}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "payloadVersion",
+							"Value": "{payloadVersion}",
+							"_Type": "KeyValue.Type.Item"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "CameraEvents_Detail"
+}

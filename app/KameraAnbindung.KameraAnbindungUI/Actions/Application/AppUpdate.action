@@ -1,0 +1,8 @@
+{
+    "_Type": "Action.Type.ApplicationUpdate",
+    "ActionResult": {
+        "_Name": "AppUpdate"
+    },
+    "OnFailure": "/KameraAnbindungUI/Rules/Application/AppUpdateFailure.js",
+    "OnSuccess": "/KameraAnbindungUI/Rules/Application/AppUpdateSuccess.js"
+}

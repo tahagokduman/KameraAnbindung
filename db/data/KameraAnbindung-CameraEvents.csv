@@ -1,0 +1,2 @@
+ID;eventType;sourceDeviceId;timestamp;plateNormalized;confidence;payloadVersion
+33333333-3333-3333-3333-333333333333;ENTRY;cam-01;2026-03-18T10:15:30Z;F-AB1234;0.94;1.0
